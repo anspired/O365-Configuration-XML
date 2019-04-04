@@ -1,0 +1,25 @@
+<Configuration ID="956fdd75-4646-4d15-9259-39fa780950ad" DeploymentConfigurationID="00000000-0000-0000-0000-000000000000">
+  <Add OfficeClientEdition="32" Channel="Broad" ForceUpgrade="TRUE">
+    <Product ID="O365ProPlusRetail">
+      <Language ID="MatchOS" />
+      <ExcludeApp ID="Access" />
+      <ExcludeApp ID="Groove" />
+      <ExcludeApp ID="Lync" />
+      <ExcludeApp ID="Publisher" />
+    </Product>
+  </Add>
+  <Property Name="SharedComputerLicensing" Value="0" />
+  <Property Name="PinIconsToTaskbar" Value="TRUE" />
+  <Property Name="SCLCacheOverride" Value="0" />
+  <Updates Enabled="TRUE" />
+  <RemoveMSI />
+  <AppSettings>
+    <User Key="software\microsoft\office\16.0\outlook\options\mail" Name="junkmailprotection" Value="6" Type="REG_DWORD" App="outlk16" Id="L_JunkEmailprotectionlevel" />
+    <User Key="software\microsoft\office\16.0\outlook\options\general" Name="check default client" Value="1" Type="REG_DWORD" App="outlk16" Id="L_MakeOutlookthedefaultprogramforEmailContactsandCalendar" />
+    <User Key="software\microsoft\office\16.0\outlook\options\mail" Name="unblockspecificsenders" Value="1" Type="REG_DWORD" App="outlk16" Id="L_PermitdownloadofcontentfromSafeSenderandRecipientlists" />
+    <User Key="software\microsoft\office\outlook\socialconnector" Name="runosc" Value="0" Type="REG_DWORD" App="outlk16" Id="L_TurnOffOutlookSocialConnector" />
+    <User Key="software\microsoft\office\16.0\word\security" Name="blockcontentexecutionfrominternet" Value="1" Type="REG_DWORD" App="word16" Id="L_BlockMacroExecutionFromInternet" />
+  </AppSettings>
+  <Display Level="None" AcceptEULA="TRUE" />
+  <Logging Level="Standard" Path="C:\AIT-TEMP" />
+</Configuration>
